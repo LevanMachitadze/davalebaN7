@@ -8,10 +8,13 @@
   --second-color: rgba(255, 255, 255, 1);
   --button-color: rgba(252, 175, 23, 1);
   --third-color: rgba(96, 96, 96, 1);
+  --fourth-color: rgba(121, 121, 121, 1);
+  --dashed-color: rgba(151, 71, 255, 1);
+  --background-color: rgba(16, 16, 16, 1);
 }
 body {
   font-family: Helvetica;
-  background-color: var(--first-color);
+  background-color: var(--background-color);
 }
 header {
   background-color: var(--first-color);
@@ -144,11 +147,27 @@ h2 {
   grid-template-rows: 224px 224px;
   grid-gap: 40px;
 }
+.trailer-6 {
+  display: flex;
+  flex-direction: column;
+}
 .VI-trailer {
   width: 860px;
-  height: 520px;
+  height: 356px;
   grid-row: 1 / 3;
   grid-column: 1 / 2;
+}
+.agora {
+  font-size: 32px;
+  color: var(--second-color);
+}
+h4 {
+  width: 329px;
+  height: 108px;
+  font-size: 16px;
+  color: var(--fourth-color);
+  border: 3px dashed var(--dashed-color);
+  padding: 20px 20px 64px;
 }
 .trailer-II {
   width: 260px;
@@ -161,4 +180,67 @@ h2 {
   height: 224px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+.download-launcher {
+  width: 1160px;
+  height: 535px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+.background {
+  width: 1160px;
+  height: 535px;
+  border-radius: 16px;
+  position: absolute;
+  top: 2367px;
+  left: 140px;
+}
+.launcher-1 {
+  width: 342.21px;
+  height: 126.75px;
+  position: absolute;
+  top: 2444px;
+  left: 216px;
+  display: flex;
+  align-items: center;
+}
+.launcher-logo {
+  width: 137.65;
+  height: 126.75px;
+}
+.launcher-2 {
+  font-size: 41.57px;
+  font-weight: bolder;
+  margin-left: 18.24px;
+}
+.launcher-visual {
+  width: 660px;
+  height: 471px;
+  position: absolute;
+  top: 2399px;
+  left: 640px;
+}
+.launcher-p {
+  width: 326px;
+  height: 96px;
+  font-size: 32px;
+  position: absolute;
+  top: 2602.75px;
+  left: 216px;
+}
+.Download-button {
+  width: 260px;
+  height: 63px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: var(--button-color);
+  position: absolute;
+  top: 2762.75px;
+  left: 216px;
+}
+footer {
+  background-color: var(--first-color);
+  margin-top: 95px;
+  display: flex;
 }
